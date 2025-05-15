@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1885ed">
+  <title>Login Animado</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error {
+      color: red;
+      font-size: 0.85em;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="ring">
+  <i style="--clr:#1aa7c7;"></i>
+  <i style="--clr:#c05a1e;"></i>
+  <i style="--clr:#886a51;"></i>
+
+  <div class="login">
+    <h2>Iniciar Sesión</h2>
+
+    <div class="inputBx">
+      <input type="text" id="usuario" placeholder="Usuario">
+      <div id="error-usuario" class="error"></div>
+    </div>
+
+    <div class="inputBx">
+      <input type="password" id="password" placeholder="Contraseña">
+      <div id="error-password" class="error"></div>
+    </div>
+
+    <div class="inputBx">
+      <input type="submit" id="btnLogin" value="Iniciar">
+    </div>
+
+    <div class="inputBx">
+      <label class="mostrar-clave">
+        <input type="checkbox" id="mostrar">
+        <h4>Mostrar contraseña</h4>
+      </label>
+      <div id="texto-claro"></div>
+    </div>
+
+    <div class="links">
+      <button type="button">Olvidé mi contraseña</button>
+      <button type="button">Registrarse</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
